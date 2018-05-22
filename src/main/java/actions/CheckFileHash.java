@@ -19,6 +19,7 @@ import java.io.IOException;
 
 public class CheckFileHash {
 
+	//sadhana
 	private static final Logger LOG = Logger.getLogger(CheckFileHash.class);
 	private HashType typeOfHash = null;
 	private String expectedFileHash = null;
