@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.ITest;
@@ -139,7 +140,10 @@ public class ExecuteTestCases implements ITest {
 		profile.setPreference("browser.helperApps.neverAsk.saveToDisk",
 				"application/vnd.openxmlformats-officedocument.wordprocessingml.document");
 
-		driver = new FirefoxDriver(profile);
+		FirefoxOptions option=new FirefoxOptions();
+		option.setProfile(profile);
+		
+		driver = new FirefoxDriver(option);
 		driver.manage().window().maximize();
 
 	}

@@ -32,7 +32,7 @@ public class ReadConfigProperty {
 		if (properties == null) {
 			try {
 
-				File file = new File(configpath + "\\config.properties");
+				File file = new File("config.properties");
 				
 
 				FileInputStream fileInput = new FileInputStream(file);
@@ -51,7 +51,7 @@ public class ReadConfigProperty {
 		String line;
 		if (properties == null) {
 			try {
-				File file = new File(configpath + "\\config.properties");	
+				File file = new File("config.properties");	
 
 				FileInputStream fileInput = new FileInputStream(file);
 
