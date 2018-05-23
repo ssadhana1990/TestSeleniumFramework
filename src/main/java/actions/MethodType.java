@@ -46,6 +46,7 @@ public class MethodType {
 
 	String alertText = null;
 	String titleOfPage = null;
+	String titleno= null;
 
 	/**
 	 * @param methodType
